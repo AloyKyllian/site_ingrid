@@ -83,7 +83,10 @@ body {
 .container {
   margin: 250px auto; /* Center the element horizontally */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   /* background-color: lime; */
   font-family: "Quicksand", sans-serif, "google";
@@ -93,11 +96,15 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  min-width: 250px;
+  padding: 10px;
 }
 .col-2 {
   display: flex;
   flex: 2;
+  min-width: 500px;
   flex-direction: column;
+  padding: 10px;
 }
 
 .panel {
