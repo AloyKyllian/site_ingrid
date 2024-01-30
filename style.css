@@ -1,14 +1,30 @@
-#header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: rgb(18, 182, 223);
+  text-decoration-line:none;
+}
+a:hover {
+  text-decoration-line:underline;
 }
 
 .contact {
   font-size: 1.2rem;
-  position: absolute;
-  top: 20px;
-  left: 2%;
+  /* position: absolute; */
+  /* top: 20px; */
   transform: translate(0, 0);
   width: 100%;
 }
@@ -64,34 +80,44 @@ body {
   background-color: rgba(136, 46, 118, 0.198);
 }
 
-#grid {
+.container {
   margin: 250px auto; /* Center the element horizontally */
-  display: grid;
+  display: flex;
+  flex-direction: row;
   width: 90%;
-  grid-template-columns: repeat(3, 1fr); /* Modified to have three columns */
   /* background-color: lime; */
   font-family: "Quicksand", sans-serif, "google";
 }
 
-#sous-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: auto; /* Modified to place img at left and para at right */
-  padding-left: 5%;
-  /* background-color: red; */
+.col-1 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.col-2 {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
 }
 
-#img-txt {
+.panel {
+  display: flex;
+  /* border: 1px solid rgba(39, 39, 39, 0.719); */
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding:0px;
+  margin:10px;
+  border-radius:10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-  display: grid;
   width: 100%;
-  grid-template-columns: auto 1fr; /* Modified to place img at left and para at right */
 }
 
-#img-txt img {
+.panel img {
   /* Set the width and height of the image */
   width: 200px; /* Adjust the value as needed */
   height: 200px; /* Adjust the value as needed */
+  border-radius: 10px 0px 0px 10px;
 }
 
 #logo {
