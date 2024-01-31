@@ -1,16 +1,44 @@
+body {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:0px;
+  margin-top:0px;
+  background-image: url("img/flowers_background.png");
+  background-color: rgb(139, 218, 238);
+}
+
 header {
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius:10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  height: 8vh;
+  min-height: 100px;
+  top: 0;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width:1480px;
 }
 
 main {
+  padding-top:10vh;
   display: flex;
   flex-direction: column;
+  min-height : 80vh;
 }
 
 footer {
+  height: 10vh;
+  min-height: 100px;
   display: flex;
   flex-direction: row;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 a {
@@ -21,6 +49,13 @@ a:hover {
   text-decoration-line:underline;
 }
 
+.background{
+  padding:0px;
+  margin:0px;
+  height: 100%;
+  background-color: rgba(219, 160, 224, 0.9);
+}
+
 .contact {
   font-size: 1.2rem;
   /* position: absolute; */
@@ -29,20 +64,7 @@ a:hover {
   width: 100%;
 }
 
-#addresse-mail {
-  margin-left: 230px;
-  font-size: 1.6rem;
-}
-
-.titre {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 40%;
-}
-.titre h1 {
+.title h1 {
   font-family: "Helvetica", sans-serif, "google";
   font-size: 2rem;
   font-weight: 400;
@@ -52,43 +74,18 @@ a:hover {
   margin: 0;
 }
 
-#addresse {
-  position: absolute;
-  top: 20px;
-  right: 12%;
-  font-size: 1.6rem;
-}
-
-#addresse p {
-  margin: 0;
-}
-
-.insta {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  /* background-color: gray; */
-}
-
 #logo-insta {
   width: 50px;
   height: 50px;
 }
-/* Add margin-top to create space between header and body */
-body {
-  /* margin-top: 200px; Adjust the value as needed */
-  background-color: rgba(136, 46, 118, 0.198);
-}
 
 .container {
-  margin: 250px auto; /* Center the element horizontally */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 90%;
-  /* background-color: lime; */
+  width: 98%;
+  padding:1%;
   font-family: "Quicksand", sans-serif, "google";
 }
 
@@ -96,28 +93,44 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  min-width: 250px;
   padding: 10px;
 }
+
 .col-2 {
   display: flex;
   flex: 2;
-  min-width: 500px;
+  flex-direction: column;
+  padding: 10px;
+}
+.col-3 {
+  display: flex;
+  flex: 3;
   flex-direction: column;
   padding: 10px;
 }
 
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+
 .panel {
   display: flex;
   /* border: 1px solid rgba(39, 39, 39, 0.719); */
+  min-width: 300px;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(235, 241, 243);
   padding:0px;
-  margin:10px;
+  margin:1%;
   border-radius:10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  width: 100%;
+  width: 98%;
 }
 
 .panel img {
@@ -127,7 +140,10 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-#logo {
-  max-width: 398px;
-  width: 100%;
+#col-logo {
+  width: 200px;
+}
+#col-logo {
+  min-width: 200px;
+  max-width: 400px;
 }
